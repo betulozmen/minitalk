@@ -14,23 +14,15 @@ Bu projede amaç, yalnızca `SIGUSR1` ve `SIGUSR2` sinyallerini kullanarak bir *
 ### `getpid()`
 Çalışan programın **Process ID**'sini (PID) döndürür. Her process'in benzersiz bir numarası vardır, server bu numarayı ekrana yazdırır ki client nereye sinyal göndereceğini bilsin.
  
----
- 
 ### `signal()`
 Belirli bir sinyal geldiğinde **hangi fonksiyonun çalışacağını** işletim sistemine bildirir.
  
----
- 
 ### `kill()`
 Bir process'e sinyal **gönderir**. İsmine rağmen sadece öldürmez, her türlü sinyal gönderilebilir.
-
----
  
 ### `pause()`
 Bir sinyal gelene kadar programı **uyku moduna** alır. CPU kullanmadan bekler.
 
----
- 
 ### `usleep()`
 Programı belirtilen **mikrosaniye** kadar uyutur. Client sinyalleri arasında beklemek için kullanır.
 
